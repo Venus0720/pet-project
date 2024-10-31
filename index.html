@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 30px;
+        }
+        .total-wrap {
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            width: calc(100% - 20px);
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            border: none;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .landing-header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid gray;
+        }
+        .landing {
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+        .landing-context {
+            padding: 30px;
+        }
+        .first-context {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+        .mb-40 {
+            margin-bottom: 40px;
+        }
+        .pet-project {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .purchase-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .view-order-container {
+            display: flex;
+            align-items: center;
+        }
+        .view-order-btn {
+            background-color: rgb(86, 86, 158);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        .visit-store-btn {
+            text-decoration: none;
+            color: rgb(86, 86, 158);
+        }
+        .order-summary-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .avatar-wrap {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .avatar-container {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid gray;
+            justify-content: space-between;
+        }
+        .image {
+            width: 100px;
+            height: 100px;
+        }
+        .avatar-name-container {
+            display: flex;
+            align-items: center;
+        }
+        .subtotal-container {
+
+        }
+        .subtotal-wrap {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .total-pay {
+            width: 60%;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            padding: 20px 0px;
+        }
+        .total {
+            display: flex;
+            justify-content: space-between;
+        }
+        .total-paid-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .saved-money {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .customer-info {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+        .address-wrap {
+            display: flex;
+        }
+        .address-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .customer-info-text {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .mr-250 {
+            margin-right: 250px;
+        }
+        .address-header {
+            font-weight: 600;
+        }
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+        .landing-footer {
+            display: flex;
+            padding: 20px;
+            border-top: 1px solid gray;
+            justify-content: center     ;
+        }
+        .email {
+            text-decoration: none;
+            color: rgb(86, 86, 158);;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="total-wrap">
+        <div class="header">
+            Preview
+        </div>
+        <div class="landing">
+            <div class="landing-header">
+                t: order #9999 confirmed
+            </div>
+            <div class="landing-context">
+                <div class="first-context">
+                    <div class="pet-project mb-40">
+                        <div>The Pet Project</div>
+                        <div>ORDER #9999</div>
+                    </div>
+                    <div class="purchase-container mb-40">
+                        <div>
+                            Thank you for your purchase
+                        </div>
+                        <div>
+                            We're getting your order ready to be shipped. We will notify you when it has been sent.
+                        </div>
+                    </div>
+                    <div class="view-order-container mb-40">
+                        <div class="view-order-btn">
+                            View your order
+                        </div>
+                        <div>
+                            or
+                        </div>
+                        <div>
+                            <a href="" class="visit-store-btn">Visit our store</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-summary-container">
+                    <div class="summary-header">
+                        Order summary
+                    </div>
+                    <div class="avatar-wrap">
+                        <div class="avatar-container">
+                            <div class="avatar-name-container">
+                                <div class="image"></div>
+                                <div>
+                                    Aviator sunglasses x 1
+                                </div>
+                            </div>
+                            <div>
+                                Rs.89.99
+                            </div>
+                        </div>
+                        <div class="avatar-container">
+                            <div class="avatar-name-container">
+                                <div class="image"></div>
+                                <div>
+                                    Aviator sunglasses x 1
+                                </div>
+                            </div>
+                            <div>
+                                Rs.89.99
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subtotal-wrap mb-40">
+                        <!-- <div class="subtotal-container">
+                            <div class="first-sub-total"></div>
+                            <div></div>
+                            <div></div>
+                        </div> -->
+
+                        <div class="total-pay">
+                            <div class="total">
+                                <div>Total</div>
+                                <div>Rs. 239.98</div>
+                            </div>
+                            <div class="total-paid-container">
+                                <div class="total">
+                                    <div>Total paid today</div>
+                                    <div>Rs. 0.00</div>
+                                </div>
+                                <div class="saved-money">
+                                    You saved Rs. 20.00
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                    </div>
+                </div>
+                <div class="customer-info">
+                    <div class="customer-info-text mb-20">
+                        Customer information
+                    </div>
+                    <div class="address-wrap mb-20">
+                        <div class="address-container mr-250">
+                            <div class="address-header">Shipping address</div>
+                            <div>Steve Shipper</div>
+                            <div>Shipping Company</div>
+                            <div>123 Shipping street</div>
+                            <div>Shipping KY 40003</div>
+                            <div>United States</div>
+                        </div>
+                        <div class="address-container">
+                            <div class="address-header">billing address</div>
+                            <div>Bob Biller</div>
+                            <div>My Company</div>
+                            <div>123 Billing street</div>
+                            <div>Billtown KY K2P0B0</div>
+                            <div>United States</div>
+                        </div>
+                    </div>
+                    <div class="mb-40">
+                        <div class="address-header">Shipping method</div>
+                        <div>Generic Shipping</div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing-footer">
+                <div>
+                    If you have any questions, reply to this email or contact us at 
+                </div>
+                <div>
+                    <a href="" class="email"> hello@thepetproject.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
