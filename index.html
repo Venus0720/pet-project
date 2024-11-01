@@ -91,12 +91,16 @@
             align-items: center;
         }
         .subtotal-container {
-
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0px;
         }
         .subtotal-wrap {
             width: 100%;
             display: flex;
-            justify-content: flex-end;
+            flex-direction: column;
+            align-items: flex-end;
         }
         .total-pay {
             width: 60%;
@@ -124,10 +128,12 @@
         }
         .address-wrap {
             display: flex;
+            width: 100%;
         }
         .address-container {
             display: flex;
             flex-direction: column;
+            width: 50%;
         }
         .customer-info-text {
             font-size: 20px;
@@ -152,6 +158,16 @@
             text-decoration: none;
             color: rgb(86, 86, 158);;
             margin-left: 5px;
+        }
+        .sub-head-foot {
+            display: flex;
+            justify-content: space-between;
+        }
+        .tip {
+            margin-left: 10px;
+        }
+        .sand {
+            content: '\f0b7';
         }
     </style>
 </head>
@@ -219,11 +235,30 @@
                         </div>
                     </div>
                     <div class="subtotal-wrap mb-40">
-                        <!-- <div class="subtotal-container">
-                            <div class="first-sub-total"></div>
-                            <div></div>
-                            <div></div>
-                        </div> -->
+                        <div class="subtotal-container">
+                            <div class="sub-head-foot">
+                                <div>Subtotal</div>
+                                <div>Rs. 244.98</div>
+                            </div>
+                            <div class="sub-head-foot">
+                                <div>Order discount</div>
+                                <div>-Rs. 5.00</div>
+                            </div>
+                            <div class="tip">
+                                ORDER5 (-Rs. 500)
+                            </div>
+                            <div class="sub-head-foot">
+                                <div>Shipping</div>
+                                <div>Free</div>
+                            </div>
+                            <div class="tip">
+                                FREE SHIPPING(-Rs. 10.00)
+                            </div>
+                            <div class="sub-head-foot">
+                                <div>Taxes</div>
+                                <div>Rs. 0.00</div>
+                            </div>
+                        </div>
 
                         <div class="total-pay">
                             <div class="total">
@@ -249,7 +284,7 @@
                         Customer information
                     </div>
                     <div class="address-wrap mb-20">
-                        <div class="address-container mr-250">
+                        <div class="address-container">
                             <div class="address-header">Shipping address</div>
                             <div>Steve Shipper</div>
                             <div>Shipping Company</div>
